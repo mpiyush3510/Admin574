@@ -1,4 +1,5 @@
 [versions]
+circleimageview = "3.1.0"
 com-android-application = "8.1.0-alpha11"
 junit = "4.13.2"
 androidx-test-ext-junit = "1.1.5"
@@ -8,6 +9,7 @@ material = "1.8.0"
 constraintlayout = "2.1.4"
 
 [libraries]
+circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }

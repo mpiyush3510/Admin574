@@ -18,5 +18,8 @@
     <string name="female">Female</string>
     <string name="other">Other</string>
     <string name="designation">Designation</string>
+    <string name="company">Team Cyber Warriors</string>
+    <string name="div">SYBCA - D5</string>
     <string name="i_agree_terms_and_condition">I agree terms and condition</string>
+    <string name="name">Name</string>
 </resources>

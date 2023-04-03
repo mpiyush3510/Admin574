@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.mpiyush3510.admin574.MainActivity;
+import com.mpiyush3510.admin574.Views.EmployeeInfo;
 import com.mpiyush3510.admin574.databinding.ActivitySignInBinding;
 import java.util.Objects;
 
@@ -25,10 +26,10 @@ Intent intent;
 
     private void Callers() {
         binding.SignIn.setOnClickListener(v -> {
-            intent=new Intent(SignIn.this, MainActivity.class);
-            if (isValidate()){
+            intent=new Intent(SignIn.this, EmployeeInfo.class);
+           // if (isValidate()){
                 startActivity(intent);
-            }
+            //}
         });
         binding.ForgotPassword.setOnClickListener(v -> {CustomAlertDialog();});
     }
