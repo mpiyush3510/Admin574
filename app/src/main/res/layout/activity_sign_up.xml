@@ -9,7 +9,7 @@
     tools:context=".Activities.SignUp">
 
     <TextView
-        android:id="@+id/SignUp"
+        android:id="@+id/HeaderSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
@@ -22,7 +22,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/SignUp"
+        android:layout_below="@+id/HeaderSignUp"
         android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -33,6 +33,8 @@
             app:boxStrokeColor="@color/Primary"
             android:hint="@string/first_name">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FirstName"
+                android:inputType="textPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Primary"/>
@@ -47,6 +49,8 @@
             app:boxStrokeColor="@color/Primary"
             android:hint="@string/last_name">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LastName"
+                android:inputType="textPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Primary"/>
@@ -66,12 +70,15 @@
                 app:boxStrokeColor="@color/Primary"
                 android:hint="@string/birthdate">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Birthdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="date"
                     android:textColor="@color/Primary"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <ImageView
+                android:id="@+id/BirthdateImg"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center"
@@ -90,6 +97,8 @@
             app:boxStrokeColor="@color/Primary"
             android:hint="@string/email">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Primary"/>
@@ -104,6 +113,8 @@
             app:boxStrokeColor="@color/Primary"
             android:hint="@string/phone_no">
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PhoneNo"
+                android:inputType="phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Primary"/>
@@ -119,12 +130,15 @@
                 android:hint="@string/city"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/City"
+                    android:inputType="none"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/Primary"/>
             </com.google.android.material.textfield.TextInputLayout>
 
         <RadioGroup
+            android:id="@+id/Gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -134,6 +148,7 @@
             android:layout_marginTop="3dp">
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/Male"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/male"
@@ -142,6 +157,7 @@
                 app:buttonTint="@color/Primary"/>
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/Female"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/female"
@@ -150,6 +166,7 @@
                 app:buttonTint="@color/Primary"/>
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/Other"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/other"
@@ -169,6 +186,8 @@
             android:hint="@string/designation"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/Designation"
+                android:inputType="none"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Primary"/>
@@ -182,6 +201,7 @@
             android:layout_marginEnd="12dp"
             android:gravity="center">
             <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/TermsCondition"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -191,6 +211,7 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/SignUp"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             app:cornerRadius="8dp"

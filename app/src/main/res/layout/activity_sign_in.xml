@@ -41,6 +41,9 @@
                 android:layout_gravity="center|top"
                 app:boxStrokeColor="@color/Primary">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/EmailOrPhone"
+                    android:inputType="text"
+                    android:textColor="@color/Primary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -54,11 +57,15 @@
                 android:layout_marginTop="5dp"
                 app:boxStrokeColor="@color/Primary">
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password"
+                    android:inputType="text"
+                    android:textColor="@color/Primary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/SignIn"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 app:cornerRadius="8dp"
@@ -70,6 +77,7 @@
                 android:textStyle="bold"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/ForgotPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/forgot_your_password"
